@@ -1,0 +1,105 @@
+.kosong {
+  margin: 0;
+  padding: 20px 12px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px dashed var(--garis);
+  border-radius: 10px;
+}
+
+.daftar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.baris {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--garis);
+}
+
+.baris:first-child { padding-top: 0; }
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.nama {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.rincian {
+  font-size: 13px;
+  color: var(--body);
+}
+
+.aksi {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.qtyTombol {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  font-weight: 700;
+}
+
+.qty {
+  min-width: 26px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.hapus {
+  margin-left: auto;
+  color: var(--bahaya);
+}
+
+.hapus:hover:not(:disabled) {
+  background: var(--bahaya-bg);
+  border-color: #fca5a5;
+}
+
+.tanya {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--bahaya);
+  margin-right: auto;
+}
+
+.ya {
+  background: var(--bahaya);
+  border-color: var(--bahaya);
+  color: #fff;
+}
+
+.ya:hover:not(:disabled) {
+  background: #991b1b;
+  border-color: #991b1b;
+}
+
+.ringkasan {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  row-gap: 4px;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.ringkasan strong {
+  text-align: right;
+  color: var(--ink);
+}
+
+.total {
+  font-size: 18px;
+  color: var(--aksen-tua) !important;
+}

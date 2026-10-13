@@ -1,0 +1,78 @@
+.kartu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  border: 1px solid var(--garis);
+  border-radius: 12px;
+  background: var(--kartu);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+/* pseudo-class :hover */
+.kartu:hover {
+  transform: translateY(-2px);
+  border-color: #fdba74;
+  box-shadow: 0 6px 18px rgb(31 26 23 / 0.08);
+}
+
+/* kelas kondisional: menu dengan stok 0 */
+.habis {
+  background: #fafaf9;
+  border-style: dashed;
+}
+
+.habis:hover {
+  transform: none;
+  border-color: var(--garis);
+  box-shadow: none;
+}
+
+.habis .nama,
+.habis .harga {
+  color: var(--muted);
+}
+
+.habis .harga { text-decoration: line-through; }
+
+.atas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.stok {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.nama {
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+.harga {
+  margin: 0 0 8px;
+  font-weight: 700;
+  color: var(--aksen-tua);
+}
+
+.tombol {
+  margin-top: auto;
+  background: var(--aksen);
+  border-color: var(--aksen);
+  color: #fff;
+  font-weight: 600;
+}
+
+.tombol:hover:not(:disabled) {
+  background: var(--aksen-tua);
+  border-color: var(--aksen-tua);
+}
+
+.tombol:disabled {
+  background: #e7e5e4;
+  border-color: #e7e5e4;
+  color: var(--body);
+}

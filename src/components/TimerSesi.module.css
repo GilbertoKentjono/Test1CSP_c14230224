@@ -1,0 +1,21 @@
+.timer {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--aksen-lembut);
+}
+
+.label {
+  font-size: 12px;
+  color: var(--aksen-tua);
+}
+
+.waktu {
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--aksen-tua);
+  font-variant-numeric: tabular-nums;
+}

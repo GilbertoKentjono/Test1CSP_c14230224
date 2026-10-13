@@ -1,0 +1,76 @@
+.grup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+  min-width: 0;
+}
+
+.baris {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 5px;
+}
+
+.kendali {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--garis);
+  border-radius: 9px;
+  background: var(--kartu);
+  color: var(--ink);
+  outline: none;
+  text-transform: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.kendali:focus {
+  border-color: var(--aksen);
+  box-shadow: 0 0 0 3px rgb(194 65 12 / 0.12);
+}
+
+/* kelas kondisional: dipasang hanya saat field punya error */
+.salah {
+  border-color: #fca5a5;
+  background: #fffafa;
+}
+
+.salah:focus {
+  border-color: var(--bahaya);
+  box-shadow: 0 0 0 3px rgb(185 28 28 / 0.12);
+}
+
+.pesanSalah {
+  margin-top: 4px;
+  font-size: 12.5px;
+  color: var(--bahaya);
+}
+
+.kirim {
+  width: 100%;
+  background: var(--ink);
+  border-color: var(--ink);
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.kirim:hover:not(:disabled) {
+  background: #44403c;
+  border-color: #44403c;
+}
+
+.sukses {
+  margin: 12px 0 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  background: var(--sukses-bg);
+  color: var(--sukses);
+}

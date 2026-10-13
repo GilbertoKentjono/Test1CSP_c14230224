@@ -1,0 +1,63 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.cari {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 9px 12px;
+  border: 1px solid var(--garis);
+  border-radius: 9px;
+  background: var(--kartu);
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input:focus {
+  border-color: var(--aksen);
+  box-shadow: 0 0 0 3px rgb(194 65 12 / 0.12);
+}
+
+.kategori {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 999px;
+  padding: 5px 8px 5px 14px;
+}
+
+.chipLabel { text-transform: capitalize; }
+
+/* kelas kondisional: hanya pada kategori yang sedang aktif */
+.chipAktif,
+.chipAktif:hover:not(:disabled) {
+  background: var(--aksen);
+  border-color: var(--aksen);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* label hanya untuk pembaca layar */
+.tersembunyi {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

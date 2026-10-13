@@ -1,0 +1,25 @@
+.badge {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.netral {
+  background: #f5f5f4;
+  color: var(--body);
+}
+
+.aksen {
+  background: var(--aksen-lembut);
+  color: var(--aksen-tua);
+}
+
+.bahaya {
+  background: var(--bahaya-bg);
+  color: var(--bahaya);
+}

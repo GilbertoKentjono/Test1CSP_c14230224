@@ -1,0 +1,22 @@
+.panel {
+  background: var(--kartu);
+  border: 1px solid var(--garis);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.kepala {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.judul { font-size: 17px; }
+
+.keterangan {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}

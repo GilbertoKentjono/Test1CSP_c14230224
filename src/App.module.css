@@ -1,0 +1,51 @@
+.halaman {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+}
+
+.kepala {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.logo {
+  font-size: 28px;
+  letter-spacing: -0.5px;
+  color: var(--aksen);
+}
+
+.slogan {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: var(--body);
+}
+
+.areaTimer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tata {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 20px;
+  align-items: start;
+}
+
+.kolomUtama,
+.kolomSamping {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+@media (max-width: 860px) {
+  .tata { grid-template-columns: 1fr; }
+}
